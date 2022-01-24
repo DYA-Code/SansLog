@@ -5,7 +5,7 @@
 </script>
 
 <template>
-  <div>
+  <div class="bg-gray-800 text-gray-100">
     <router-view />
   </div>
 </template>
