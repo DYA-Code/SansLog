@@ -5,7 +5,7 @@
 </script>
 
 <template>
-  <div class="bg-gray-800 text-gray-100">
+  <div class="text-gray-100 bg-gradient-to-r from-cyan-900 to-purple-900">
     <router-view />
   </div>
 </template>
