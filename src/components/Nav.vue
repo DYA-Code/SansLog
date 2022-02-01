@@ -5,6 +5,10 @@
 
     let usrOnLogin = window.sessionStorage.getItem("usrId")
     if (usrOnLogin === null) { usrOnLogin = "Usr" }
+
+    function LogOut () {
+      if (usrOnLogin !== null) { window.sessionStorage.removeItem("usrId"); document.location.href = '/' }
+    }
 </script>
 
 <template>
@@ -28,7 +32,7 @@
         </div>
 
         <div class="relative left-53p">  <!-- usr Acc -->
-          <a class="font-medium text-xl">{{ usrOnLogin }}</a>
+          <a class="font-medium text-xl" @click="LogOut()">{{ usrOnLogin }}</a>
         </div>
 
     </div>

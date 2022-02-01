@@ -3,6 +3,7 @@
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 import { defineComponent, onMounted } from 'vue'
 import Nav from '../components/Nav.vue'
+import Footer from '../components/Footer.vue'
 import axios from 'axios'
 
 let res = []
@@ -10,7 +11,8 @@ let res = []
 export default defineComponent ({
   name: 'RegisterPage',
   components: {
-    Nav
+    Nav,
+    Footer
   },
   setup() {
     let signupInfo:any = ({
@@ -44,10 +46,10 @@ export default defineComponent ({
 
   <div class="Menu">
     <div class="title text-5xl ml-72 mt-32 my-5">
-      <span class="font-medium">Up and</span> <span class="font-semibold">In</span>
+      <span class="font-medium">Sign Up and</span> <span class="font-semibold">Sign In</span>
     </div>
 
-    <div class="w-96 relative ml-72 mt-16 loginForm">
+    <div class="w-96 relative ml-72 mt-16 loginForm mb-52">
       <form class="bg-white drop-shadow-2xl rounded px-8 pt-6 pb-8 mb-4">
         <div class="mb-4">
           <label class="block text-gray-700 text-sm font-bold mb-2" htmlFor="username">
@@ -74,6 +76,8 @@ export default defineComponent ({
       </p>
     </div>
   </div>
+
+  <Footer />
 </template>
 
 <style>

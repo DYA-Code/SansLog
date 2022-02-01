@@ -60,13 +60,12 @@
     <!-- Content -->
     <div class="flex flex-wrap justify-center">
         <div v-for="(i, index) in rres" :index="index" v-bind:id="i" @click="onClickView(index)" class="w-72 shadow-lg m-20 hover:scale-110 hover:-translate-y-1 duration-100">
-          <img class="w-72" src="https://i.ibb.co/prBm3hN/dia.png" alt="DIA!">
+          <img class="w-72 rounded" src="https://i.ibb.co/prBm3hN/dia.png" alt="DIA!">
 
-          <div class="px-6 py-4 bg-gradient-to-r from-cyan-700 to-purple-700">
+          <div class="rounded px-6 py-4 bg-gradient-to-r from-cyan-700 to-purple-700">
             <div class="font-bold text-xl mb-8">{{ tt[i-1] }}</div>  <!-- Title -->
             <p class="text-base text-gray-100">{{ ct[i-1] }}</p>  <!-- Content -->
           </div>
-          <span>{{ i }}</span>
         </div>
     </div>
   
