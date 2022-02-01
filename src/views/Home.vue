@@ -40,6 +40,9 @@
           window.sessionStorage.setItem("viewItem", a)
           document.location.href = '/view'
           console.log(a)
+        },
+        Write: async function () {
+          document.location.href = '/write'
         }
       }
     })
@@ -58,6 +61,7 @@
     </div>
 
     <!-- Content -->
+    <button @click="Write()" class="writeBtn px-7 py-4 relative left-3/4 ml-60 bg-gradient-to-r from-cyan-700 to-purple-700 rounded-md shadow-blue-800 drop-shadow-xl hover:drop-shadow-2xl text-white">Write</button>
     <div class="flex flex-wrap justify-center">
         <div v-for="(i, index) in rres" :index="index" v-bind:id="i" @click="onClickView(index)" class="w-72 shadow-lg m-20 hover:scale-110 hover:-translate-y-1 duration-100">
           <img class="w-72 rounded" src="https://i.ibb.co/prBm3hN/dia.png" alt="DIA!">

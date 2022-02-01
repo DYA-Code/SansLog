@@ -29,14 +29,13 @@ export default defineComponent ({
   }
 })
 
-
 </script>
 
 <template>
   <Nav />
 
-  <div class="Menu mb-52">
-    <div class="title text-5xl ml-96 mt-32 my-5">
+  <div class="Menu">
+    <div class="title text-5xl ml-96 mt-32 my-5 mb-52">
 <!--      <span class="font-medium">Read the</span> <span class="font-semibold">Content</span>-->
       <div class="font-semibold">{{ viewTitle }}</div>
       <div class="font-medium">{{ viewContent }}</div>
